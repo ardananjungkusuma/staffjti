@@ -1,7 +1,6 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $('#listBarang').DataTable();
-        // $('#listMahasiswa').DataTable();
         $('#listUser').DataTable();
         $('#listTransaksi').DataTable();
 

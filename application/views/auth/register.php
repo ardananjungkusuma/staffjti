@@ -3,7 +3,7 @@
 ?>
 <div class="container">
     <div class="row mt-3">
-        <div class="col-md-6" style="margin:0 auto;background-color: #631319;border-radius: 25px;color:white">
+        <div class="col-md-6" style="margin:0 auto;background-color: #84142d;border-radius: 25px;color:white">
             <div class="card-body">
                 <h4 style="text-align: center">Register</h4><br>
                 <?php if (validation_errors()) : ?>

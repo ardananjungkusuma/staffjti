@@ -16,7 +16,7 @@ class Auth extends CI_Controller
         } elseif ($this->session->userdata('level') == "admin") {
             redirect('user', 'refresh');
         }
-        $data['title'] = 'Inventaris Lab JTI';
+        $data['title'] = 'Portal Staff JTI Polinema';
         $this->load->view('auth/template/header', $data);
         $this->load->view('auth/index');
     }
