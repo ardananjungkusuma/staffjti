@@ -160,9 +160,9 @@ class Mahasiswa extends CI_Controller
                 if (empty($id)) {
                     redirect('mahasiswa');
                 } else {
-                    $delete =  $this->curl->simple_delete($this->API . '/mahasiswa?id_mahasiswa=' . $id, array(CURLOPT_BUFFERSIZE => 10));
+                    $delete =  $this->curl->simple_delete($this->API . '/mahasiswa?id_mahasiswa=', array('id_mahasiswa' => $id), array(CURLOPT_BUFFERSIZE => 10));
                     if ($delete) {
-                        $this->session->set_flashdata('hasil', 'Delete Data Gagal');
+                        $this->session->set_flashdata('hasil', 'Delete Data gagal');
                     } else {
                         $this->session->set_flashdata('hasil', 'Delete Data Berhasil');
                     }
